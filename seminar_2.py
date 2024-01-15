@@ -41,7 +41,7 @@ while True:
     m = input('Введите вторую дробь в формате a/b: ')
     separator = '/'
     if separator in n:
-        a2, b2 = map(int, n.split('/'))
+        a2, b2 = map(int, m.split('/'))
         break
 
 f1 = fractions.Fraction(a1, b1)
