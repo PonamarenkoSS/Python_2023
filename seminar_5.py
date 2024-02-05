@@ -19,7 +19,7 @@ def os_func():
     extension = input_way[len(input_way)-1].split('.')[-1]
     return way, name, extension
 
-#print(os_func())
+print(os_func())
 
 '''
 Задание 2.
