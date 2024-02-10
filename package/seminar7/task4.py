@@ -10,5 +10,10 @@ def gen_files(ext: str, min_name: int = 6, max_name: int = 30, min_size: int = 2
             f.write(data)
 
 
+def num_files(**kwargs) -> None:
+    for ext, num in kwargs.items():
+        gen_files(ext, file_count=num)
+
 if __name__ == '__main__':
-    gen_files("bin", file_count=5)
+    # gen_files("bin", file_count=5)
+    num_files(bin=2, jpeg =1)
