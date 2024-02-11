@@ -39,12 +39,12 @@ def gen_different_files(directory: str | Path, **kwargs) -> None:
     if isinstance(directory, str):
         directory = Path(directory)
     if not directory.is_dir():
-    directory.mkdir(parents=True)
+        directory.mkdir(parents=True)
     os.chdir(directory)
     for ext, numbers in kwargs.items():
-    gen_files(ext, file_count=numbers)
+        gen_files(ext, file_count=numbers)
 
 if __name__ == '__main__':
-gen_different_files(r"C:\Users\77017\PycharmProjects\python_data_seminar_7\test", avi=2,
-doc=4, bin=3, jpg=5, mkv=6, png=3)
-sort_files(Path(r"C:\Users\77017\PycharmProjects\python_data_seminar_7\test"))
+    gen_different_files(r"/Users/svetlanaponamarenko/Desktop/Python/seminar/Python_2023/Python_2023/test/spam", avi=2,
+            oc=4, bin=3, jpg=5, mkv=6, png=3)
+    sort_files(Path(r"/Users/svetlanaponamarenko/Desktop/Python/seminar/Python_2023/Python_2023/test/spam"))
