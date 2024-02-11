@@ -1,3 +1,5 @@
+__all__ = ['gen_files', 'num_files']
+
 from random import choices, randint, randbytes
 from string import ascii_lowercase, digits
 

@@ -1,3 +1,5 @@
+__all__ = ['write_file']
+
 from random import randint, uniform
 from pathlib import Path
 

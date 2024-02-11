@@ -1,3 +1,5 @@
+__all__ = ['read_or_begin', 'sum_files']
+
 from pathlib import Path
 from typing import TextIO
 

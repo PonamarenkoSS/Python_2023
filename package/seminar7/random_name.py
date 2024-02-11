@@ -1,3 +1,5 @@
+__all__ = ['gen_names']
+
 from random import randint, choice
 from pathlib import Path
 

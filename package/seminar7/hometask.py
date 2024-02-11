@@ -10,6 +10,8 @@ e. принимать диапазон сохраняемого оригинал
     К ним прибавляется желаемое конечное имя, если оно передано. Далее счётчик файлов и расширение.
 '''
 
+__all__ = ['rename_files']
+
 from pathlib import Path
 import os
 
@@ -43,7 +45,6 @@ def rename_files(directory: str | Path, ext_now: str, ext_future: str, finish_na
                 else:
                     new_file_name = finish_name + str(counter).zfill(count_of_numbers) + '.' + ext_future
                     counter += 1
-            print(new_file_name)
             Path(file_in_dir).rename(new_file_name)
 
 if __name__ == '__main__':
