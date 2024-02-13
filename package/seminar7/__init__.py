@@ -1,1 +1,1 @@
-__all__ = ['hometask.py', ]
+__all__ = ['hometask.py', 'random_name.py', 'random_number.py', 'task3.py', 'task4.py', 'task5.py', 'task6.py']
