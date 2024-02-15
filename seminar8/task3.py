@@ -9,7 +9,7 @@ def json_to_csv(path: Path):
     result = []
     for level, id_name in data.items():
         for id, name in id_name.items():
-            result.append({'level': level, 'id': id, 'name': name})
+            result.append({'level': int(level), 'id': int(id), 'name': name})
     with open(path.stem + '.csv', 'w', encoding='UTF-8', newline='') as file_write:
         csv_write = csv.DictWriter(file_write, fieldnames=['level', 'id', 'name'], dialect='excel-tab')
         csv_write.writeheader()
