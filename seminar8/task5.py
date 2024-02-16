@@ -13,4 +13,4 @@ def json_to_pickle(path: Path):
                 pickle.dump(data, f_write)
 
 if __name__ == '__main__':
-    json_to_pickle(Path(r'/Users/svetlanaponamarenko/Desktop/Python/seminar/Python_2023'))
+    json_to_pickle(Path(r'/Users/svetlanaponamarenko/Desktop/Python/seminar'))
