@@ -1,3 +1,5 @@
+__all__ = ['json_to_pickle']
+
 import json
 import pickle
 from pathlib import Path

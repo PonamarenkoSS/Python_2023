@@ -1,3 +1,5 @@
+__all__ = ['input_user']
+
 import json
 from pathlib import Path
 

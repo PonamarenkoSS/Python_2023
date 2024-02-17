@@ -1,3 +1,5 @@
+__all__ = ['dir_walker']
+
 import json
 import csv 
 from pathlib import Path

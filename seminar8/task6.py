@@ -1,3 +1,6 @@
+__all__ = ['pickle_to_csv']
+
+
 import csv
 import pickle
 from pathlib import Path
